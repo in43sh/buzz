@@ -53,13 +53,13 @@
 }
 
 :root {
-  --color-primary: #FFFFFF;
-  --color-secondary: #FFCE3A;
+  --color-primary: #ffffff;
+  --color-secondary: #ffce3a;
   --color-black: #000000;
-  --color-black-header: #1B1E1F;
+  --color-black-header: #1b1e1f;
   --color-gray: #879095;
-  --color-dark-gray: #353B3E;
-  --color-light-gray: #CFD7DC;
+  --color-dark-gray: #353b3e;
+  --color-light-gray: #cfd7dc;
   --color-gray-stroke: #979797;
   --color-red: #ff0000;
   --width-1280: 1280;
@@ -83,7 +83,7 @@ html {
 body {
   /*easier to calculate props: total  width and height will include paddings */
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /*
@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -651,7 +651,7 @@ a {
   padding: 6rem 0;
   width: 100%;
   display: grid;
-  grid-template-areas: "footer-top-left footer-top-middle footer-top-right" "footer-bottom-left footer-bottom-middle footer-bottom-right";
+  grid-template-areas: 'footer-top-left footer-top-middle footer-top-right' 'footer-bottom-left footer-bottom-middle footer-bottom-right';
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 1.5rem;
   justify-content: space-between;
@@ -783,7 +783,7 @@ a {
   }
   .footer__main-container {
     padding: 5rem 3rem;
-    grid-template-areas: "footer-top-left" "footer-bottom-left" "footer-top-middle" "footer-bottom-middle" "footer-top-right" "footer-bottom-right";
+    grid-template-areas: 'footer-top-left' 'footer-bottom-left' 'footer-top-middle' 'footer-bottom-middle' 'footer-top-right' 'footer-bottom-right';
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }
@@ -1029,7 +1029,9 @@ a {
   align-items: center;
   justify-content: center;
 }
-.nav__link, .nav__link:link, .nav__link:visited {
+.nav__link,
+.nav__link:link,
+.nav__link:visited {
   color: var(--color-primary);
   text-decoration: none;
   display: flex;
@@ -1328,7 +1330,7 @@ a {
   display: flex;
   position: absolute;
   z-index: 1;
-  background: url("../img/banner.png") center/cover;
+  background: url('../img/banner.png') center/cover;
 }
 .top-slider__image {
   width: 100%;
@@ -1851,7 +1853,7 @@ a {
 .top-slider {
   height: 70vh;
   width: 100%;
-  background-color: #89AFC2;
+  background-color: #89afc2;
 }
 
 .categories-links-home-container__categories-link {
@@ -2000,7 +2002,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/tutorials-bg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/tutorials-bg.png');
   mix-blend-mode: darken;
   color: var(--color-primary);
 }

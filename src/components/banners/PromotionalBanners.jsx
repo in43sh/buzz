@@ -17,15 +17,15 @@ function PromotionalBanners(props) {
       ),
       bottomText: 'Free delivery. Today only',
       img: vacuum,
-      bgColor: '#BF90FB',
+      bgColor: '#BF90FB'
     },
     {
       id: '222222',
       topText: 'Financing Available',
       bottomText: 'Up to 24 month financing. Terms & conditions apply',
       img: card,
-      bgColor: '#739AFF',
-    },
+      bgColor: '#739AFF'
+    }
   ];
 
   // console.log(bannersData);

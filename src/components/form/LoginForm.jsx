@@ -1,36 +1,45 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Loader from '../Loader';
-import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
-import fb from '../../img/icons/fb-white.svg';
-import { useDispatch, useSelector } from 'react-redux';
-import { authSetToken } from '../../redux/reducer';
 
-const LoginForm = ({ props, errors, handleBlur, handleChange, handleSubmit, touched, values }) => {
-  const dispatch = useDispatch();
+import {
+  useSelector
+  // useDispatch
+} from 'react-redux';
+
+import { Link } from 'react-router-dom';
+
+import Loader from '../Loader';
+
+// import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props';
+// import fb from '../../img/icons/fb-white.svg';
+
+// import { authSetToken } from '../../redux/reducer';
+
+const LoginForm = ({ errors, handleBlur, handleChange, handleSubmit, touched, values }) => {
+  // const dispatch = useDispatch();
   const loginLoader = useSelector((state) => state.loginLoader);
 
   const loginErrors = useSelector((state) => state.loginErrorMessage);
 
-  const componentClicked = () => {
-    console.log('clicked');
-  };
+  // const componentClicked = () => {
+  //   console.log('clicked');
+  // };
 
-  const responseFacebook = (response) => {
-    console.log(response);
-    if (response.accessToken) {
-      const token = response.accessToken;
-      // const userData = {...response, ...{["type"]: "facebook"}};
-      const userData = response;
-      userData.type = 'facebook';
-      console.log('token ', token);
-      console.log('userData ', userData);
-      dispatch(authSetToken(token, userData));
-    }
-  };
+  // const responseFacebook = (response) => {
+  //   console.log(response);
+  //   if (response.accessToken) {
+  //     const token = response.accessToken;
+  //     // const userData = {...response, ...{["type"]: "facebook"}};
+  //     const userData = response;
+  //     userData.type = 'facebook';
+  //     console.log('token ', token);
+  //     console.log('userData ', userData);
+  //     dispatch(authSetToken(token, userData));
+  //   }
+  // };
 
   return (
     <form onSubmit={handleSubmit} autoComplete="off">
+      {/*
       <FacebookLogin
         appId="791454958258166"
         autoLoad={false}
@@ -44,6 +53,7 @@ const LoginForm = ({ props, errors, handleBlur, handleChange, handleSubmit, touc
           </div>
         )}
       />
+      */}
       <div className="login__or-container">
         <div className="login__horizontal-line"></div>
         <p>OR</p>

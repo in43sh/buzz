@@ -146,7 +146,7 @@ export const Header = (props) => {
 
 Header.propTypes = {
   user: PropTypes.shape.isRequired,
-  token: PropTypes.shape.isRequired,
+  token: PropTypes.shape.isRequired
 };
 
 export default connect(({ user, token }) => ({ user, token }))(Header);

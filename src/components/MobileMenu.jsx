@@ -4,14 +4,16 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { authSetToken, setLoginErrorMessage } from '../redux/reducer';
 
-const Ul = styled.ul`
+const Ul = styled.ul.withConfig({
+  shouldForwardProp: (prop) => prop !== 'openMobileMenu' // Filter out openMobileMenu from being forwarded to the DOM
+})`
   list-style: none;
   display: flex;
   flex-direction: column;
   background-color: var(--color-primary);
   position: fixed;
   z-index: 10;
-  transform: ${({ openMobileMenu }) => (openMobileMenu ? 'translateX(0)' : 'translateX(100%)')};
+  transform: ${({ $openMobileMenu }) => ($openMobileMenu ? 'translateX(0)' : 'translateX(100%)')};
   top: 0;
   right: 0;
   height: 100vh;
@@ -48,25 +50,19 @@ const Ul = styled.ul`
 
 const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
   const dispatch = useDispatch();
-  // const { user, token } = props;
   const token = useSelector((state) => state.token);
   const user = useSelector((state) => state.user);
-  // const token = localStorage.getItem('token');
-  // const user = localStorage.getItem('user');
 
   const logOut = () => {
-    // (token) ? do : do
     if (token || user) {
       dispatch(authSetToken(null, null));
       dispatch(setLoginErrorMessage(null));
-      // localStorage.removeItem('token');
-      // localStorage.removeItem('user');
     }
     setOpenMobileMenu(!openMobileMenu);
   };
 
   return (
-    <Ul openMobileMenu={openMobileMenu}>
+    <Ul $openMobileMenu={openMobileMenu}>
       {user ? (
         <Link onClick={() => setOpenMobileMenu(!openMobileMenu)} to="/account">
           <li>Account</li>
@@ -99,9 +95,7 @@ const MobileMenu = ({ openMobileMenu, setOpenMobileMenu }) => {
         <Link onClick={() => logOut()} to="/">
           <li>Log out</li>
         </Link>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </Ul>
   );
 };

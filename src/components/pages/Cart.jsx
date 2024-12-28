@@ -35,8 +35,7 @@ function Cart() {
             {cart.length === 0 ? (
               <p
                 style={{ paddingBottom: '8rem' }}
-                className="heading-secondary cart__items-quantity"
-              >
+                className="heading-secondary cart__items-quantity">
                 There are no items in the cart
               </p>
             ) : (
@@ -57,7 +56,7 @@ function Cart() {
                 </div>
                 {cart.map((item, index) => {
                   return (
-                    <div className="cart-row">
+                    <div key={index} className="cart-row">
                       <div className="cart-row__product-info-container">
                         <img className="img-fluid" src={item.image} alt="paint" />
                         <p className="cart-row__product-info-text">{item.productTitle}</p>
@@ -72,14 +71,12 @@ function Cart() {
                           <div className="cart-row__quantity-container-actions-container pointer">
                             <p
                               className="cart-row__quantity-container-action"
-                              onClick={() => addQuantity(item.id)}
-                            >
+                              onClick={() => addQuantity(item.id)}>
                               +
                             </p>
                             <p
                               className="cart-row__quantity-container-action"
-                              onClick={() => substractQuantity(item.id)}
-                            >
+                              onClick={() => substractQuantity(item.id)}>
                               -
                             </p>
                           </div>
@@ -87,8 +84,7 @@ function Cart() {
                       </div>
                       <div
                         className="cart-row__remove-item-container pointer"
-                        onClick={() => removeFromCart(item.id)}
-                      >
+                        onClick={() => removeFromCart(item.id)}>
                         <p>x</p>
                       </div>
                     </div>

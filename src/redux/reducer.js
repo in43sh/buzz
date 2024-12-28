@@ -4,7 +4,7 @@ const initialState = {
   token: null,
   user: null,
   loginErrorMessage: null,
-  loginLoader: false,
+  loginLoader: false
 };
 
 // action type
@@ -72,7 +72,7 @@ export const authSetToken = (token, user) => {
 
   return {
     type: AUTH_SET_TOKEN,
-    payload: { token, user },
+    payload: { token, user }
   };
 };
 
