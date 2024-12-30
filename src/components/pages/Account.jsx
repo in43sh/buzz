@@ -23,15 +23,16 @@ function Account() {
 
     axios
       .get('https://aw-store.herokuapp.com/auth/users', options)
-      .then((res) => {
-        // console.log(res.data);
-        // setUsers(res.data);
+      .then(() => {
+        // .then((res) => {
+        //   console.log(res.data);
+        //   setUsers(res.data);
       })
       .catch((err) => {
-        // if (err.response.status === 401) {
-        //     history.push("/login");
-        // }
-        console.log(err);
+        if (err.response.status === 401) {
+          history.push('/login');
+        }
+        // console.log(err);
       });
   }, [history]);
 
@@ -70,26 +71,22 @@ function Account() {
                   <ul className="account-sidebar__sidebar-list">
                     <li
                       className="account-sidebar__item pointer"
-                      onClick={() => switchTab('Orders')}
-                    >
+                      onClick={() => switchTab('Orders')}>
                       Orders
                     </li>
                     <li
                       className="account-sidebar__item pointer"
-                      onClick={() => switchTab('Edit Account')}
-                    >
+                      onClick={() => switchTab('Edit Account')}>
                       Edit Profile
                     </li>
                     <li
                       className="account-sidebar__item pointer"
-                      onClick={() => switchTab('Contact Support')}
-                    >
+                      onClick={() => switchTab('Contact Support')}>
                       Contact Support
                     </li>
                     <li
                       className="account-sidebar__item pointer"
-                      onClick={() => switchTab('Private Page')}
-                    >
+                      onClick={() => switchTab('Private Page')}>
                       Private Page
                     </li>
                   </ul>

@@ -40,7 +40,8 @@ const LoginFormik = withFormik({
       };
     }, {}),
 
-  handleSubmit: (values, { setSubmitting, props: { history, dispatch, token } }) => {
+  // handleSubmit: (values, { setSubmitting, props: { history, dispatch, token } }) => {
+  handleSubmit: (values, { setSubmitting, props: { history, dispatch } }) => {
     // alert(JSON.stringify(values, null, 2));
 
     setSubmitting(false);

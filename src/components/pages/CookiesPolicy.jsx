@@ -61,9 +61,9 @@ const CookiesPolicy = () => {
       <h3 className="heading-tertiary pb-10">Our Cookies</h3>
       <p className="text pb-10">
         Our cookies are “first-party cookies”, and can be either permanent or temporary. These are
-        necessary cookies, without which the Site won't work properly or be able to provide certain
-        features and functionalities. Some of these may be manually disabled in your browser, but
-        may affect the functionality of the Site.
+        necessary cookies, without which the Site won&apos;'t work properly or be able to provide
+        certain features and functionalities. Some of these may be manually disabled in your
+        browser, but may affect the functionality of the Site.
       </p>
       <h3 className="heading-tertiary pb-10">Personalization Cookies</h3>
       <p className="text pb-10">

@@ -13,16 +13,14 @@ function PrivatePage() {
       }
     };
 
-    axios
-      .get('https://aw-store.herokuapp.com/auth/users', options)
-      .then((res) => {
-        // console.log(res.data);
-        setUsers(res.data);
-      })
-      .catch((err) => {
-        // console.log(err)
-        // console.log(err.response);
-      });
+    axios.get('https://aw-store.herokuapp.com/auth/users', options).then((res) => {
+      // console.log(res.data);
+      setUsers(res.data);
+    });
+    // .catch((err) => {
+    //   console.log(err)
+    //   console.log(err.response);
+    // });
   }, []);
 
   return (

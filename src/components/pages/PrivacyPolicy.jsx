@@ -187,7 +187,7 @@ const PrivacyPolicy = () => {
         If we believe the release of information about you is necessary to respond to legal process,
         to investigate or remedy potential violations of our policies, or to protect the rights,
         property, and safety of others, we may share your information as permitted or required by
-        any applicable law, rule, or regulation.  This includes exchanging information with other
+        any applicable law, rule, or regulation. This includes exchanging information with other
         entities for fraud protection and credit risk reduction.
       </p>
       <h3 className="heading-tertiary pb-10">Third-Party Service Providers</h3>

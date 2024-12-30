@@ -9,7 +9,8 @@ import TutorialBanners from '../banners/TutorialBanners';
 import WeDeliverBanner from '../banners/WeDeliverBanner';
 import CategoriesLinksHome from '../CategoriesLinksHome';
 
-const AccountNew = ({ user, token }) => {
+// const AccountNew = ({ user, token }) => {
+const AccountNew = ({ token }) => {
   // const { user } = props;
   // const { token } = props;
   const [currentTab, setCurrentTab] = useState({ value: 'Orders' });
@@ -24,9 +25,10 @@ const AccountNew = ({ user, token }) => {
 
     axios
       .get('https://aw-store.herokuapp.com/auth/users', options)
-      .then((res) => {
-        // console.log(res.data);
-        // setUsers(res.data);
+      .then(() => {
+        // .then((res) => {
+        //   console.log(res.data);
+        //   setUsers(res.data);
       })
       .catch((err) => {
         // if (err.response.status === 401) {
