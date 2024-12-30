@@ -17,7 +17,8 @@ import PrivacyPolicy from './components/pages/PrivacyPolicy';
 import CookiesPolicy from './components/pages/CookiesPolicy';
 import { connect } from 'react-redux';
 
-const Routes = ({ token }) => {
+// const Routes = ({ token }) => {
+const Routes = () => {
   // useEffect(() => {
   //     if (token && location.pathname === '/login') history.push('/account')
   // }, [token, location.pathname])

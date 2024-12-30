@@ -94,7 +94,7 @@ export const setLoginLoader = (bool) => {
 const reducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
-    case ADD_TO_CART:
+    case ADD_TO_CART: {
       const product = state.cart.find((item) => item.id === payload.id);
       if (product) {
         const tempProduct = { ...product, quantity: product.quantity + 1 };
@@ -106,57 +106,58 @@ const reducer = (state = initialState, action) => {
         const tempProduct = { ...action.payload, quantity: 1 };
         return { ...state, cart: [...state.cart, tempProduct] };
       }
+    }
 
-    case REMOVE_FROM_CART:
+    case REMOVE_FROM_CART: {
       if (payload) {
-        state.cart = state.cart.filter((item) => item.id !== payload);
-        return state;
+        const updatedCart = state.cart.filter((item) => item.id !== payload);
+        return { ...state, cart: updatedCart };
       }
       break;
+    }
 
-    case ADD_QUANTITY:
+    case ADD_QUANTITY: {
       if (payload) {
-        state.cart = state.cart.map((item) => {
+        const updatedCart = state.cart.map((item) => {
           if (item.id === payload) {
             item.quantity++;
           }
           return item;
         });
+        return { ...state, cart: updatedCart };
       }
       return state;
+    }
 
-    case SUBSTRACT_QUANTITY:
+    case SUBSTRACT_QUANTITY: {
       if (payload) {
-        state.cart = state.cart.map((item) => {
-          if (item.id === payload) {
-            if (item.quantity !== 1) {
-              item.quantity--;
-            }
+        const updatedCart = state.cart.map((item) => {
+          if (item.id === payload && item.quantity !== 1) {
+            item.quantity--;
           }
           return item;
         });
+        return { ...state, cart: updatedCart };
       }
       return state;
+    }
 
     case AUTH_INIT:
-    case AUTH_SET_TOKEN:
+    case AUTH_SET_TOKEN: {
       const { token, user } = payload;
-      return { ...state, ...{ token, user } };
+      return { ...state, token, user };
+    }
 
-    case LOGIN_ERROR_MESSAGE:
+    case LOGIN_ERROR_MESSAGE: {
       if (payload) {
-        state.loginErrorMessage = payload;
-        return state;
+        return { ...state, loginErrorMessage: payload };
       }
       break;
+    }
 
-    case LOGIN_LOADER:
-      if (payload) {
-        state.loginLoader = false;
-      } else {
-        state.loginLoader = true;
-      }
-      return state;
+    case LOGIN_LOADER: {
+      return { ...state, loginLoader: !payload };
+    }
 
     default:
       return state;
