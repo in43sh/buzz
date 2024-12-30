@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
 function EditAccount() {
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    const options = {
-      headers: {
-        authorization: token
-      }
-    };
-
+    // const token = localStorage.getItem('token');
+    // const options = {
+    //   headers: {
+    //     authorization: token
+    //   }
+    // };
     // axios
     //   .get('https://aw-store.herokuapp.com/auth/users', options)
     //   .then((res) => {
