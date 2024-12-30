@@ -28,8 +28,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${build})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${build})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Build</p>
                 </div>
               </Link>
@@ -37,8 +36,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${paint})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${paint})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Paint</p>
                 </div>
               </Link>
@@ -46,8 +44,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${grow})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${grow})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Grow</p>
                 </div>
               </Link>
@@ -55,8 +52,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${organize})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${organize})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Organize</p>
                 </div>
               </Link>
@@ -64,8 +60,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${clean})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${clean})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Clean</p>
                 </div>
               </Link>
@@ -73,8 +68,7 @@ function Tutorials() {
                 <div className="tutorials-container__tutorials-categories-item">
                   <div
                     className="tutorials-container__tutorials-categories-item-img"
-                    style={{ backgroundImage: `url(${decorate})` }}
-                  ></div>
+                    style={{ backgroundImage: `url(${decorate})` }}></div>
                   <p className="tutorials-container__tutorials-categories-item-header">Decorate</p>
                 </div>
               </Link>
