@@ -71,26 +71,22 @@ const AccountNew = ({ user, token }) => {
                 <ul className="account__options-list">
                   <li
                     className="account__options-list-item pointer"
-                    onClick={() => switchTab('Orders')}
-                  >
+                    onClick={() => switchTab('Orders')}>
                     Orders
                   </li>
                   <li
                     className="account__options-list-item pointer"
-                    onClick={() => switchTab('Edit Account')}
-                  >
+                    onClick={() => switchTab('Edit Account')}>
                     Edit Account
                   </li>
                   <li
                     className="account__options-list-item pointer"
-                    onClick={() => switchTab('Contact Support')}
-                  >
+                    onClick={() => switchTab('Contact Support')}>
                     Contact Support
                   </li>
                   <li
                     className="account__options-list-item pointer"
-                    onClick={() => switchTab('Private Page')}
-                  >
+                    onClick={() => switchTab('Private Page')}>
                     Private Page
                   </li>
                 </ul>

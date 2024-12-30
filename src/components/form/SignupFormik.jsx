@@ -39,7 +39,8 @@ const SignupFormik = withFormik({
       };
     }, {}),
 
-  handleSubmit: (values, { setSubmitting, props: { history, dispatch } }) => {
+  // handleSubmit: (values, { setSubmitting, props: { history, dispatch } }) => {
+  handleSubmit: ({ setSubmitting }) => {
     setSubmitting(false);
     // console.log(values);
     // axiosWithAuth(false)

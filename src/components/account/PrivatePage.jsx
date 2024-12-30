@@ -36,8 +36,7 @@ function PrivatePage() {
               marginBottom: '1rem',
               padding: '1rem',
               fontSize: '2rem'
-            }}
-          >
+            }}>
             <p>{user.name}</p>
             <p>{user.email}</p>
           </div>

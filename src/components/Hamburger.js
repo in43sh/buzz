@@ -43,7 +43,8 @@ const Hamburger = ({ openMobileMenu, setOpenMobileMenu }) => {
     <Div
       className="pointer"
       $openMobileMenu={openMobileMenu} // Ensure you're using the $openMobileMenu prop here
-      onClick={() => setOpenMobileMenu(!openMobileMenu)}>
+      onClick={() => setOpenMobileMenu(!openMobileMenu)}
+    >
       <div />
       <div />
       <div />

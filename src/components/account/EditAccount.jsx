@@ -27,8 +27,10 @@ function EditAccount() {
       <p>in43sh@gmail.com</p>
       <div className="account__change-email-container">
         <div className="account__input-container input-container">
-          <label className="label">E-MAIL</label>
-          <input className="input" />
+          <label htmlFor="email" className="label">
+            E-MAIL
+          </label>
+          <input id="email" className="input" />
         </div>
         <div className="account__change-container">
           <Link className="account__change-link">
@@ -36,35 +38,49 @@ function EditAccount() {
           </Link>
         </div>
         <div className="account__password-container account__input-container input-container">
-          <label className="label">PASSWORD</label>
-          <input className="input" />
+          <label htmlFor="password" className="label">
+            PASSWORD
+          </label>
+          <input id="password" className="input" />
         </div>
       </div>
       <h2 className="account__heading-primary heading-primary">Shipping Address</h2>
       <div className="account__account-info">
         <div className="account__input-container input-container">
-          <label className="label">NAME</label>
-          <input className="input" />
+          <label htmlFor="name" className="label">
+            NAME
+          </label>
+          <input id="name" className="input" />
         </div>
         <div className="account__street-input-container account__input-container input-container">
-          <label className="label">STREET</label>
-          <input className="input" />
+          <label htmlFor="street" className="label">
+            STREET
+          </label>
+          <input id="street" className="input" />
         </div>
         <div className="account__input-container input-container">
-          <label className="label">CITY</label>
-          <input className="input" />
+          <label htmlFor="city" className="label">
+            CITY
+          </label>
+          <input id="city" className="input" />
         </div>
         <div className="account__input-container input-container">
-          <label className="label">STATE</label>
-          <input className="input" />
+          <label htmlFor="state" className="label">
+            STATE
+          </label>
+          <input id="state" className="input" />
         </div>
         <div className="account__input-container input-container">
-          <label className="label">ZIP CODE</label>
-          <input className="input" />
+          <label htmlFor="zip" className="label">
+            ZIP CODE
+          </label>
+          <input id="zip" className="input" />
         </div>
         <div className="account__input-container input-container">
-          <label className="label">COUNTRY</label>
-          <input className="input" />
+          <label htmlFor="country" className="label">
+            COUNTRY
+          </label>
+          <input id="country" className="input" />
         </div>
       </div>
       <div className="account__btn-group">

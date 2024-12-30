@@ -101,32 +101,27 @@ const CookiesPolicy = () => {
       </p>
       <a
         className="text pb-10"
-        href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-      >
+        href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">
         Apple Safari
       </a>
       <a
         className="text pb-10"
-        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=en"
-      >
+        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=en">
         Google Chrome
       </a>
       <a
         className="text pb-10"
-        href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
-      >
+        href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd">
         Microsoft Edge
       </a>
       <a
         className="text pb-10"
-        href="https://support.microsoft.com/en-us/topic/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
-      >
+        href="https://support.microsoft.com/en-us/topic/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d">
         Microsoft Internet Explorer
       </a>
       <a
         className="text pb-10"
-        href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
-      >
+        href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US">
         Mozilla Firefox
       </a>
       <a className="text pb-10" href="https://help.opera.com/en/latest/web-preferences/">
@@ -134,26 +129,22 @@ const CookiesPolicy = () => {
       </a>
       <a
         className="text pb-10"
-        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DAndroid&hl=en&oco=1"
-      >
+        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DAndroid&hl=en&oco=1">
         Android (Chrome)
       </a>
       <a
         className="text pb-10"
-        href="https://docs.blackberry.com/content/dam/docs-blackberry-com/release-pdfs/en/device-user-guides/BlackBerry-Classic-Smartphone-10.3.3-User-Guide-en.pdf"
-      >
+        href="https://docs.blackberry.com/content/dam/docs-blackberry-com/release-pdfs/en/device-user-guides/BlackBerry-Classic-Smartphone-10.3.3-User-Guide-en.pdf">
         Blackberry
       </a>
       <a
         className="text pb-10"
-        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DiOS&hl=en&oco=1"
-      >
+        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DiOS&hl=en&oco=1">
         Iphone or Ipad (Chrome)
       </a>
       <a
         className="text pb-10"
-        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DAndroid&hl=en&oco=1"
-      >
+        href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DAndroid&hl=en&oco=1">
         Iphone or Ipad (Safari)
       </a>
     </div>

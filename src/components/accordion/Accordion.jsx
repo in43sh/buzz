@@ -17,8 +17,7 @@ const Accordion = (props) => {
     <div className="accordion-section">
       <button
         className={active ? 'accordion accordion--active pointer' : 'accordion pointer'}
-        onClick={toggleActive}
-      >
+        onClick={toggleActive}>
         <p className="accordion__title">{props.title}</p>
         <Chevron
           className={active ? 'accordion__icon accordion__icon--rotate' : 'accordion__icon'}
