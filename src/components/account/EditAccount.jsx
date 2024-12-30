@@ -11,14 +11,14 @@ function EditAccount() {
       }
     };
 
-    axios
-      .get('https://aw-store.herokuapp.com/auth/users', options)
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    // axios
+    //   .get('https://aw-store.herokuapp.com/auth/users', options)
+    //   .then((res) => {
+    //     console.log(res);
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //   });
   }, []);
 
   return (

@@ -68,7 +68,7 @@ const LoginFormik = withFormik({
         }
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
         // Error codes
         // 401 - wrong password
         // 500 - user with such email doesn't exist
