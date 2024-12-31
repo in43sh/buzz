@@ -15,7 +15,7 @@ function PopularProducts(props) {
     fetch(`${BASE_URL}/products`, requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data.users);
+        setProducts(data.products);
       })
       .catch((error) => console.error('Fetch Error:', error));
   }, [BASE_URL]);
